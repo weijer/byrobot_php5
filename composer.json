@@ -1,5 +1,5 @@
 {
-    "name": "yiranzai/byrobot",
+    "name": "weijer/byrobot_php5",
     "type": "library",
     "description": "百应智能外呼系统API",
     "keywords": [
@@ -18,7 +18,7 @@
     ],
     "require": {
         "php": "~7.1",
-        "yiranzai/tools": "~0.1",
+        "weijer/tools_php5": "*",
         "ext-json": "*"
     },
     "require-dev": {
