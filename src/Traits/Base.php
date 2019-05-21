@@ -26,7 +26,7 @@ trait Base
      * 接口域名
      * @var string
      */
-    private static $baseUrl = 'https://api.byrobot.cn';
+    private static $baseUrl = 'http://api.byrobot.cn';
     /**
      * 接口版本
      * @var string

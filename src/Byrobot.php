@@ -104,8 +104,14 @@ final class Byrobot
             throw  new \RuntimeException($str . ' api not found');
         }
         $data        = self::$url[$str];
-        $data['url'] = self::$baseUrl .
+        //根据官方文档导入客户接口使用v2版
+        if($str == 'importTaskCustomer'){
+            $data['url'] = self::$baseUrl .
+            str_replace('{apiVersion}', 'v2', $data['url']);
+        }else{
+            $data['url'] = self::$baseUrl .
             str_replace('{apiVersion}', self::$apiVersion, $data['url']);
+        }
         return $data;
     }
 
