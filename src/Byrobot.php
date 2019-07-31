@@ -225,6 +225,19 @@ final class Byrobot
     }
 
     /**
+     * 获取公司的机器人话术变量接口
+     *
+     * @param array $param
+     * @param bool  $isArr
+     * @return array|object|null
+     * @throws \Exception
+     */
+    public function getSceneVariables($param = [], $isArr = false)
+    {
+        return $this->send(__FUNCTION__, $param, $isArr);
+    }
+
+    /**
      * 添加单个黑名单到公司默认黑名单组接口
      *
      * @param array $param

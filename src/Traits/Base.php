@@ -137,6 +137,11 @@ trait Base
             'method' => 'GET',
             'desc'   => '获取一个通话的详情接口',
         ],
+        'getSceneVariables'          => [
+            'url'    => '/openapi/{apiVersion}/task/getSceneVariables',
+            'method' => 'GET',
+            'desc'   => '获取任务的话术变量',
+        ],
     ];
 
     /**
